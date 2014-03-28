@@ -4,6 +4,25 @@
 
 @import "bootstrap";
 
+body {
+  background: #f4f4f7;
+  color: #444;
+}
+
+h1{
+  font-size: 65px;
+  line-height: 1.2em;
+  border-bottom: #CCC solid 1px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+#image canvas {
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
 .digit {
   width: 200px;
   height: 100px;

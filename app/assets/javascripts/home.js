@@ -32,7 +32,7 @@ function takePic() {
 
     // self.setInterval(function(){anim()},1325);
     ctx.drawImage(video, 0, 0);
-    $('#image').append('<div class="row"><div class="col-md-4 col-offset-md-4"><div class="thumbnail"><img src="'+canvas.toDataURL('image/png')+'" class="image-responsive"></div></div></div>')
+    $('#image').append('<div class="row"><div class="col-md-4 col-offset-md-4"><img src="'+canvas.toDataURL('image/png')+'" class="image-responsive"></div></div>')
 
     Caman("#image img", function () {
       this.brightness(20);
