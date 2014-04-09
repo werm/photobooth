@@ -4,9 +4,24 @@
 
 @import "bootstrap";
 
-body {
+body, header {
   background: #f4f4f7;
   color: #444;
+}
+
+.main-content, header {
+  width: 100%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+h1.sticky {
+  z-index: 10000;
+  width: auto;
+  text-align: center;
 }
 
 h1{
@@ -23,16 +38,23 @@ h1{
   border: 1px solid #ddd;
 }
 
+#image .canvas-wrapper:nth-child(2) {
+  margin-top: -10px;
+  border-top: 1px solid #fff;
+  margin-bottom: 1200px;
+}
+
 .digit {
-  width: 200px;
-  height: 100px;
+  display: none;
+  width: 300px;
+  height: 150px;
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -100px;
-  margin-top: -50px;
+  margin-left: -150px;
+  margin-top: -75px;
   color: #000;
-  font-size: 7em;
+  font-size: 12em;
   text-align: center;
   font-weight: bold;
   -webkit-opacity: 1;
@@ -45,4 +67,12 @@ h1{
   /* solve for flicker problem */
   -webkit-perspective: 1000;
   -webkit-backface-visibility: hidden;
+}
+
+iframe {
+  height: 800px;
+  min-height: 800px;
+  width: 50mm;
+  position: relative;
+  margin: 0 auto;
 }

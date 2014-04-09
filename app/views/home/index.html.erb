@@ -1,26 +1,38 @@
 <div class="container">
-  <h1 id="cheese"></h1>
-
   <section class="main-content">
-    <h1 id="message">Say cheese!</h1>
-    <div id="countdown"></div>
-  <div class="row">
-    <input type="text" id="name" class="form-control" placeholder="Name?">
-    <button id="snapshot" class="btn btn-primary">Take Photo</button>
-  </div>
-    <div class="col-md-3">
-      <video src="" class="thumbnail" autoplay="autoplay", style="width: 160px; height: 160px;" id="vid"></video>
-    </div>
-    <div class="col-md-9">
-      <div id="image">
-        <div id="countdown">
-          <div class="digit" id="one">1</div>
-          <div class="digit" id="two">2</div>
-          <div class="digit" id="three">3</div>
-        </div>
+    <header>
+      <h1 id="message">Say cheese!</h1>
+    </header>
+    <div class="row">
+      <div class="col-md-12">
+        <input type="text" id="name" class="form-control" placeholder="Name?">
       </div>
-      <canvas id="canvas" width="480", height="480" style="display: none;"></canvas>
     </div>
-    <p id="error"></p>
-  </section>
+    <div class="row">
+      <div class="col-md-12">
+        <button id="snapshot" class="btn btn-primary">Take Photo</button>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-6">
+        <div id="imageContainer">
+          <div id="image"></div>
+          <div id="countdown">
+            <div class="digit" id="one">1</div>
+            <div class="digit" id="two">2</div>
+            <div class="digit" id="three">3</div>
+          </div>
+        </div>
+        <canvas id="canvas" width="640", height="480" style="display: none;"></canvas>
+      </div>
+      <div class="col-md-6">
+        <video src="" class="thumbnail" autoplay="autoplay", style="width: 640px; height: 480px;" id="vid"></video>
+        <button id="print" class="btn btn-success">Print</button>
+      </div>
+      <p id="error"></p>
+    </section>
+  </div>
 </div>
+
+<div id="printMe"></div>

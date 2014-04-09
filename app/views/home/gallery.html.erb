@@ -1,0 +1,18 @@
+<div class="container">
+  <section class="main-content">
+   <div class="row">
+     <div class="col-md-12">
+       <h1 id="message">Say cheese!</h1>
+     </div>
+   </div>
+    <div class="row">
+      <% @files.each do |f| %>
+        <div class="col-md-4">
+          <a href="#" class="thumbnail">
+            <img src="<%= f %>">
+          </a>
+        </div>
+      <% end %>
+    </div>
+  </section>
+</div>

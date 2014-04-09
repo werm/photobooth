@@ -4,6 +4,10 @@ class HomeController < ApplicationController
   def index
   end
 
+  def gallery
+    @files = Dir['public/uploads/*.*'].map {|f| f.sub('public','') }
+  end
+
   def create_image
     time = Time.new
     name= params[:name]

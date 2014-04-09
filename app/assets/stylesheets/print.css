@@ -1,0 +1,13 @@
+img {
+  width: 40mm;
+  margin-top: 20px;
+}
+
+#image {
+  text-align: center;
+}
+
+#image p {
+  color: #888;
+  font-size: 12px;
+}

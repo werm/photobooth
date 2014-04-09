@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   post 'save_photo' => 'home#create_image'
 
+  get 'gallery' => 'home#gallery'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
